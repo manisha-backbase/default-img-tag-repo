@@ -6,14 +6,7 @@ const routes: Routes = [{
     import('./native-img-catalog/native-img-catalog.module').then(
       (m) => m.NativeImgCatalogModule
     )
-},
-{
-  path: 'ngoptimized-img-catalog',
-  loadChildren: () =>
-    import('./ngoptimized-img-catalog/ngoptimized-img-catalog.module').then(
-      (m) => m.NgoptimizedImgCatalogModule
-    )
-    },]
+}]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
